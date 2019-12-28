@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a_uts_kadek_1174006">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ProfilePerusahaanActivity"
+            android:label="PROFIL PERUSAHAAN"></activity>
+        <activity android:name=".HitungGajiActivity"
+            android:label="HITUNG GAJI"/>
+        <activity android:name=".InputDataGajiActivity"
+            android:label="INPUT DATA GAJI"/>
+        <activity android:name=".ProfileActivity"
+            android:label="MENU UTAMA"/>
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/SignUpTheme"
+            android:label="SIGN UP"/>
+        <activity android:name=".LoginActivity"
+            android:label="SIGN IN"/>
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

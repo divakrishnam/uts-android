@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputDataGajiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Data Gaji"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:background="@drawable/custom_edittext_1"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="6dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_jabatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            <RadioButton
+                android:id="@+id/rb_kp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kepala Pelaksana"
+                android:buttonTint="@color/colorOrange"
+                android:textColor="@color/colorAccent"/>
+            <RadioButton
+                android:id="@+id/rb_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sekretaris"
+                android:buttonTint="@color/colorOrange"
+                android:textColor="@color/colorAccent"/>
+
+            <RadioButton
+                android:id="@+id/rb_kb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kepala Bidang"
+                android:buttonTint="@color/colorOrange"
+                android:textColor="@color/colorAccent"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gaji Pokok"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="18dp"/>
+        <EditText
+            android:id="@+id/et_gaji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rp. "
+            android:background="@drawable/custom_edittext_1"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tunjangan"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="18dp"/>
+        <EditText
+            android:id="@+id/et_tunjangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rp. "
+            android:background="@drawable/custom_edittext_1"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Potongan"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="18dp"/>
+        <EditText
+            android:id="@+id/et_potongan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rp. "
+            android:background="@drawable/custom_edittext_1"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="6dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_hitung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hitung"
+                android:background="@color/colorOrange"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
